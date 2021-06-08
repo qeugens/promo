@@ -1,5 +1,12 @@
+@font-face{
+font-family: 'typography';
+src: url('fonts/typography.ttf');
+font-weight: normal;
+font-style: normal;
+}
+
 h1 {
-  font-family: 'CSTM XPRMNTL 01 30082017';
+  font-family: typography;
   font-style: normal;
   font-weight: normal;
   font-size: 90px;
@@ -29,7 +36,7 @@ body {
   z-index: 1;
 }
 .logo {
-  font-family: 'CSTM XPRMNTL 01 30082017';
+  font-family: 'typography';
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
@@ -128,23 +135,25 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+.second {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .outer {
   display: block;
-  position: absolute;
-  width: auto;
-  height: auto;
-  top: 1450px;
-  left: 8%;
+  margin: 0 0 0 -50px;
 }
 .inner {
   display: none;
-  position: absolute;
   width: auto;
   height: auto;
   top: 1450px;
   left: 8%;
 }
 .second > h1 {
-  margin: 60px 0 0 700px;
+  margin: 100px 50px 0 0;
   text-align: center;
 }
