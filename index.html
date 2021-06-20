@@ -1,45 +1,126 @@
-ч  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>kolorist</title>
+    <meta name="description" content="Центр цветовых настроек">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="qeugens">
+     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Колорист</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css">/
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script src="javascripts/script.js"></script>
   </head>
   <body>
     <div class="header">
       <div class="head_content">
         <a href="index.html" class="logo">Колорист</a>
         <div class="sections">
-          <a href="#">О пространстве</a>
-          <a href="#">Магазин мерча</a>
-          <a href="#">Онлайн-центр</a>
-          <a href="#">Спецпроект</a>
-          <a href="#">Регистрация</a>
+          <a href="about.html" target="_blank">О пространстве</a>
+          <a href="shop.html" target="_blank">Магазин мерча</a>
+          <a href="online.html" target="_blank">Онлайн-центр</a>
+          <a href="project.html" target="_blank">Спецпроект</a>
+          <a href="#registration">Регистрация</a>
         </div>
       </div>
     </div>
 
     <div class="first">
-      <div class="circle"></div>
-      <h1>Центр цветовых <br> настроек <br> «Колорист»</h1>
-      <p class="first_text">Расскажем о технологиях <br> центра</p>
-      <img src="images/arrow.svg" alt="">
-      <div class="first_container">
-        <div class=""> <img src="images/romb.svg" alt=""> </div>
-        <div class=""> <img src="images/star.svg" alt=""> </div>
-        <div class=""> <img src="images/clover.svg" alt=""> </div>
+      <div class="circle">
+        <div class="wrapper">
+          <h1>Центр цветовых <br> настроек <br> «Колорист»</h1>
+          <p class="first_text">Расскажем о технологиях <br> центра</p>
+          <img src="images/arrow.svg" alt="">
+          <div class="first_container">
+            <div class=""> <img src="images/romb.svg" alt=""> </div>
+            <div class=""> <img src="images/star.svg" alt=""> </div>
+            <div class=""> <img src="images/clover.svg" alt=""> </div>
+          </div>
+          <p class="second_text">Центр цветовых настроек «Колорист» — место, где можно <br> изменить своё цветовое восприятие, добавить других <br> оттенков миру , залить его любимым цветом или <br> полностью поменять цветовой профиль. </p>
       </div>
-      <p class="second_text">Центр цветовых настроек «Колорист» — место, где можно <br> изменить своё цветовое восприятие, добавить других <br> оттенков миру , залить его любимым цветом или <br> полностью поменять цветовой профиль. </p>
+      </div>
+    </div>
+
+    <div class="flowers">
       <div class="flowers1"> <img src="images/flower.svg" alt=""><img src="images/flower.svg" alt=""> </div>
       <div class="flowers2"> <img src="images/flower.svg" alt=""><img src="images/flower.svg" alt=""> </div>
     </div>
 
     <div class="second">
-      <div class="outer"> <img src="images/outer.png" alt=""> </div>
-      <div class="inner"> <img src="images/inner.png" alt=""> </div>
-      <h1>Здание <br> центра</h1>
+      <div class="plan"></div>
+      <div class="switch">
+        <h1>Здание <br> центра</h1>
+        <form class="block-form" action="#" method="post">
+          <div class="checkbox">
+            <input type="checkbox" name="" value="">
+          </div>
+        </form>
+      </div>
     </div>
 
+    <div class="third">
+      <div class="title">
+        <img src="images/star.svg" alt="">
+        <h1>Карта центра</h1>
+        <img src="images/star.svg" alt="">
+      </div>
+        <div class="map">
+          <div class="zones reseption" data-index="tc1"></div>
+          <div class="zones lecture" data-index="tc2"></div>
+          <div class="zones rest" data-index="tc3"></div>
+          <div class="zones canteen" data-index="tc4"></div>
+          <div class="zones cabinet" data-index="tc5"></div>
+            <div class="tablo">
+              <div class="tablo_content tc1">
+                <h2>Ресепшн</h2>
+                <div class=""><img src="images/twinkle.png" alt=""></div>
+                <p>На ресепшене можно оформить терапию <br> и получить свой цвет для  похода <br> к специалисту</p>
+              </div>
+              <div class="tablo_content tc2">
+                <h2>Лекторий</h2>
+                <div class=""><img src="images/twinkle.png" alt=""></div>
+                <p>В лектории можно послушать лучших специалистов в сфере цвета и больше узнать о процедурах</p>
+              </div>
+              <div class="tablo_content tc3">
+                <h2>Отдых</h2>
+                <div class=""><img src="images/twinkle.png" alt=""></div>
+                <p>В центре есть две зоны отдыха — для клиентов теплых или холодных цветов, а также лаборатория</p>
+              </div>
+              <div class="tablo_content tc4">
+                <h2>Столовая</h2>
+                <div class=""><img src="images/twinkle.png" alt=""></div>
+                <p>В столовой все блюда разделены <br> на на 4 части для пациентов разных <br> групп</p>
+              </div>
+              <div class="tablo_content tc5">
+                <h2>Кабинеты</h2>
+                <div class=""><img src="images/twinkle.png" alt=""></div>
+                <p>Кабинеты личной консультации делятся строго по цветам. Здесь специалисты проводят терапию </p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="fourth">
+          <h1 id="registration">Регистрация на терапию</h1>
+          <div class="picker"></div>
+          <div class="color-picker"></div>
+          <form action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="Имя">
+            <input type="text" name="" value="" placeholder="Фамилия">
+            <input type="text" name="" value="" placeholder="Электронная почта">
+            <p class="button" id="ready">Зарегистрироваться</p>
+          </form>
+          <hr>
+          <div class="footer">
+            <div class="f_logo">Колорист</div>
+            <div class="data">
+              <div class="contacts">8(918)108-73-07 <br> www.kolorist.ru <br><br> Цветной бульвар 13</div>
+              <div class="nets">Instagram <br> Facebook</div>
+              <div class="author"> Сайт спроектирован <br> Машей Журанковой</div>
+            </div>
+          </div>
+      </div>
   </body>
 </html>
