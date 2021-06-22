@@ -446,7 +446,7 @@ hr {
   border: none;
   color: #FFE143;
   font-family: main;
-  font-size: 28px;
+  font-size: 24px;
   background-color: #FF5C29;
   letter-spacing: 0;
   margin: 5px;
@@ -471,6 +471,14 @@ hr {
 }
 .pcr-app[data-theme=monolith] .pcr-selection .pcr-color-palette .pcr-palette:before {
   border-radius: 25px;
+}
+.registration_stars {
+  position: absolute;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  left: 13%;
+  top: 730px;
 }
 .f_logo {
   font-family: Colorist;
@@ -500,7 +508,75 @@ hr {
   width: 65%;
 }
 
+/* О ПРОСТРАНСТВЕ */
+.slick-track {
+  display: flex;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slider {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+.slider .slick-arrow {
+  top: 0;
+  position: absolute;
+  z-index: 10;
+  font-size: 0;
+}
+.slider .slick-arrow.slick-prev {
+  top: 80px;
+  left: 0;
+  width: 50vw;
+  height: 650px;
+  background: none;
+  border: none;
+  cursor: url(../images/cursor_left.svg), auto;
+}
+.slider .slick-arrow.slick-next {
+  margin: 80px;
+  right: 0;
+  width: 50vw;
+  height: 650px;
+  background: none;
+  border: none;
+  cursor: url(../images/cursor_right.svg), auto;
+}
 
+.about_book {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 30px 0 -10px 35px;
+}
+.book {
+  width: 100%;
+}
+.book img {
+  margin-left: 480px;
+}
+.book a {
+  text-decoration: none;
+  font-family: main_b;
+  display: block;
+  width: 423px;
+  height: 68px;
+  font-size: 28px;
+  background: #FFE143;
+  color: #FF5C29;
+  border-radius: 34px;
+  transition: .2s;
+  text-align: center;
+  cursor: pointer;
+  padding: 16px;
+  line-height: 34px;
+  margin: 50px auto;
+}
+.book a:hover {
+  background: #75B8FF;
+}
 /* МАГАЗИН МЕРЧА */
 .title_shop {
   display: flex;
@@ -509,8 +585,67 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
-
-
+.price {
+  font-family: main;
+  font-size: 24px;
+  color: #FFE042;
+  text-align: center;
+  background: #FF5C29;
+  width: 254px;
+  height: 56px;
+  border-radius: 34px;
+  line-height: 29px;
+  padding: 13px;
+  cursor: pointer;
+  transition: .2s;
+}
+.price:hover {
+  background: #CF69FF;
+  transition: .2s;
+}
+.item_raw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 445px;
+}
+.shop_raw {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.shop_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 2000px;
+  width: 100%;
+  align-items: center;
+}
+.price1 {
+  margin: 20px;
+}
+.price2 {
+  margin: 60px;
+}
+.price3 {
+  margin: 101px;
+}
+.price4 {
+  margin: 50px;
+}
+.price5 {
+  margin: 82px;
+}
+.raw1 {
+  margin: 20px;
+}
+.raw2 {
+  margin: 100px;
+}
+.raw3 {
+  margin: -40px;
+}
 /* ОНЛАЙН-ЦЕНТР */
 .title_centre > h1 {
   text-align: center;
@@ -529,5 +664,181 @@ hr {
   width: 40%;
   flex-direction: row;
   justify-content: space-between;
+  margin: 20px auto;
+
+}
+.games {
+  font-family: main_b;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+.shop_link {
+  text-decoration: none;
+  color: #FF5C29;
+  background:  #75B8FF;
+  border-radius: 34px;
+  width: 453px;
+  height: 56px;
+  margin: 12px;
+  padding: 10px;
+  transition: .2s;
+}
+.shop_link:hover {
+  background:  #FFE042;
+  transition: .2s;
+}
+.marks_link {
+  text-decoration: none;
+  color: #CF69FF;
+  background:  #FF5C29;
+  border-radius: 34px;
+  width: 453px;
+  height: 56px;
+  background: #FFE042;
+  margin: 12px;
+  padding: 10px;
+  transition: .2s;
+}
+.marks_link:hover {
+  background:  #75B8FF;
+  transition: .2s;
+}
+.machine_link {
+  text-decoration: none;
+  color: #FFE042;
+  background:  #FF5C29;
+  border-radius: 34px;
+  width: 453px;
+  height: 56px;
+  margin-top: 12px;
+  padding: 10px;
+  transition: .2s;
+}
+.machine_link:hover {
+  background: #75B8FF;
+  transition: .2s;
+}
+
+/* МАГАЗИН ОТТЕНКОВ */
+.shelves {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  height: 100%;
+}
+.shelf {
+  position: relative;
+  width: 100%;
+  height: 131px;
+}
+.shelf1 {
+  background: #CF69FF;
   margin: 0 auto;
+}
+.shelf2 {
+  background: #FF5C29;
+}
+.shelf3 {
+  background: #75B8FF;
+}
+.shelf4 {
+  background: #FFE042;
+}
+.shelf5 {
+  background: #FF5C29;
+}
+.ball {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background: #FFE042;
+}
+.balls {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+.ball1 {
+  margin-left: 15%;
+}
+.ball4 {
+  margin-left: 20%;
+  background: #75B8FF;
+}
+.ball5 {
+  background: #FF5C29;
+}
+.ball6 {
+  background: #75B8FF;
+}
+.balls2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.ball7 {
+  background: #CF69FF;
+}
+.ball8 {
+  background: #CF69FF;
+  margin-left: 25%;
+}
+.ball9 {
+  background: #CF69FF;
+}
+.ball10 {
+  background: #75B8FF;
+}
+.ball11 {
+  background: #75B8FF;
+}
+.ball12 {
+  margin-left: 20%
+}
+.ball13 {
+  background: #FF5C29;
+  margin-left: 20%;
+}
+.ball16 {
+  margin-left: 30%;
+}
+.ball17 {
+  background: #FF5C29;
+}
+.ball18 {
+  background: #FF5C29;
+  margin-left: 6%;
+}
+.ball19 {
+  background: #75B8FF;
+  margin-left: 40%;
+}
+.ball20 {
+  background: #FF5C29;
+}
+.ball21 {
+  background: #CF69FF;
+}
+.ball22 {
+  background: #CF69FF;
+}
+.ball23 {
+  margin-left: 25%;
+}
+.ball24 {
+  background: #CF69FF;
+}
+.ball25 {
+  background: #CF69FF;
+}
+.ball26 {
+  background:  #75B8FF;
 }

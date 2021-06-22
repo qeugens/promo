@@ -8,7 +8,40 @@
     <meta name="author" content="qeugens">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Магазин мерча</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascripts/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript">
+    $(document).ready(function(){
+      document.getElementById('sold').onclick = function() {
+      document.getElementById('sold').innerHTML = 'Готово';
+      }
+      document.getElementById('sold1').onclick = function() {
+      document.getElementById('sold1').innerHTML = 'Готово';
+      }
+      document.getElementById('sold2').onclick = function() {
+      document.getElementById('sold2').innerHTML = 'Готово';
+      }
+      document.getElementById('sold3').onclick = function() {
+      document.getElementById('sold3').innerHTML = 'Готово';
+      }
+      document.getElementById('sold4').onclick = function() {
+      document.getElementById('sold4').innerHTML = 'Готово';
+      }
+      document.getElementById('sold5').onclick = function() {
+      document.getElementById('sold5').innerHTML = 'Готово';
+      }
+      document.getElementById('sold6').onclick = function() {
+      document.getElementById('sold6').innerHTML = 'Готово';
+      }
+      document.getElementById('sold7').onclick = function() {
+      document.getElementById('sold7').innerHTML = 'Готово';
+      }
+      document.getElementById('sold8').onclick = function() {
+      document.getElementById('sold8').innerHTML = 'Готово';
+      }
+    });
+    </script>
   </head>
   <body>
     <div class="header">
@@ -28,6 +61,52 @@
       <img src="images/star.svg" alt="">
       <h1>Магазин мерча</h1>
       <img src="images/star.svg" alt="">
+    </div>
+
+    <div class="shop_items">
+      <div class="shop_raw raw1">
+        <div class="item_raw shop1">
+          <img src="images/shop1.png" alt="">
+          <p class="price1 price" id="sold">800₽</p>
+        </div>
+        <div class="item_raw shop2">
+          <img src="images/shop2.png" alt="">
+          <p class="price1 price" id="sold1">800₽</p>
+        </div>
+        <div class="item_raw shop3">
+          <img src="images/shop3.png" alt="">
+          <p class="price1 price" id="sold2">800₽</p>
+        </div>
+      </div>
+      <div class="shop_raw raw2">
+        <div class="item_raw shop4">
+          <img src="images/shop4.png" alt="">
+          <p class="price2 price" id="sold3">500₽</p>
+        </div>
+        <div class="item_raw shop5">
+          <img src="images/shop5.png" alt="">
+          <p class="price3 price" id="sold4">1500₽</p>
+        </div>
+        <div class="item_raw shop6">
+          <img src="images/shop6.png" alt="">
+          <p class="price2 price" id="sold5">500₽</p>
+        </div>
+      </div>
+      <div class="shop_raw raw3">
+        <div class="item_raw shop7">
+          <img src="images/shop7.png" alt="">
+          <p class="price5 price" id="sold6">2000₽</p>
+        </div>
+        <div class="item_raw shop8">
+          <img src="images/shop8.png" alt="">
+          <p class="price4 price" id="sold7">700₽</p>
+        </div>
+        <div class="item_raw shop9">
+          <img src="images/shop9.png" alt="">
+          <p class="price4 price" id="sold8">1200₽</p>
+        </div>
+      </div>
+
     </div>
 
   </body>
