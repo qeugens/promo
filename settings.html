@@ -7,17 +7,11 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="qeugens">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <title>Онлайн-центр</title>
+    <title>Кастомизация</title>
     <link rel="stylesheet" href="css/styles.css">
-    <style media="screen">
-      body {
-        background-color: #CF69FF;
-      }
-      .header {
-        background-color: #CF69FF;
-      }
-
-    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="javascripts/settings.js"></script>
   </head>
   <body>
     <div class="header">
@@ -33,23 +27,11 @@
       </div>
     </div>
 
-    <div class="title_centre">
-      <h1>Попробуйте центр <br> цветовых настроек онлайн</h1>
-      <div class="star_centre">
-        <img src="images/star.svg" alt="">
-        <img src="images/star.svg" alt="">
-      </div>
-    </div>
+    <div id="red"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
 
-    <div class="figures_centre">
-      <img src="images/romb.svg" alt="">
-      <img src="images/star.svg" alt="">
-      <img src="images/flower.svg" alt="">
-    </div>
-    <div class="games">
-      <a href="colorshop.html" class="shop_link" target="_blank">Магазин оттенков</a>
-      <a href="marks.html" class="marks_link" target="_blank">Оценка настроек</a>
-      <a href="https://qeugens.github.io/coloristPoster/" class="machine_link" target="_blank">Машина Голдберга</a>
-    </div>
+    <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+
   </body>
 </html>
