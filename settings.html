@@ -9,48 +9,10 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Кастомизация</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!-- <script type="javascripts/settings.js"></script> -->
-    <script type="text/javascript">
-    $(document).ready(function() {
-        function hexFromRGB(r, g, b) {
-          var hex = [
-            r.toString( 16 ),
-            g.toString( 16 ),
-            b.toString( 16 )
-          ];
-          $.each( hex, function( nr, val ) {
-            if ( val.length === 1 ) {
-              hex[ nr ] = "0" + val;
-            }
-          });
-          return hex.join( "" ).toUpperCase();
-        }
-        function refreshSwatch() {
-          var red = $( "#red" ).slider( "value" ),
-            green = $( "#green" ).slider( "value" ),
-            blue = $( "#blue" ).slider( "value" ),
-            hex = hexFromRGB( red, green, blue );
-          $( "#swatch" ).css( "background-color", "#" + hex );
-        }
-
-        $( "#red, #green, #blue" ).slider({
-          orientation: "horizontal",
-          range: "min",
-          max: 255,
-          value: 127,
-          slide: refreshSwatch,
-          change: refreshSwatch
-        });
-        $( "#red" ).slider( "value", 255 );
-        $( "#green" ).slider( "value", 140 );
-        $( "#blue" ).slider( "value", 60 );
-      });
-    </script>
+    <script src="javascripts/jquery.min.js" charset="utf-8"></script>
   </head>
   <body>
-    <!-- <div class="header">
+    <div class="header">
       <div class="head_content">
         <a href="index.html" class="logo">Колорист</a>
         <div class="sections">
@@ -61,13 +23,55 @@
           <a href="index.html">Регистрация</a>
         </div>
       </div>
-    </div> -->
+    </div>
 
-    <div id="red"></div>
-    <div id="green"></div>
-    <div id="blue"></div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".r, .g, .b").on('input', function(){
+        let r = $(".r").val();
+        let g = $(".g").val();
+        let b = $(".b").val();
 
-    <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+       $(".show-color").css("background", "rgb("+r+","+g+","+b+")");
+       $(".rgb-val").val( "rgb("+r+","+g+","+b+")");
+      });
+      document.getElementById('bought').onclick = function() {
+      document.getElementById('bought').innerHTML = 'Готово';
+      }
+      $('.variant1').click(function(){
+        $('.show-color').css("background-color","#75B8FF")
+      });
+      $('.variant2').click(function(){
+        $('.show-color').css("background-color","#FF5C29")
+      });
+      $('.variant3').click(function(){
+        $('.show-color').css("background-color","#CF69FF")
+      });
+      $('.variant4').click(function(){
+        $('.show-color').css("background-color","#FFE042","border","4px solid #CF69FF")
+      });
+    });
+    </script>
 
+    <div class="show-color"></div>
+    <div class="automat">
+      <p class="automatp">Настроить оттенок</p>
+              <div class="rgb-slider">
+                <input type="range" max="255" min="0" step="1" class="r"><br>
+                <input type="range" max="255" min="0" step="1" class="g"><br>
+                <input type="range" max="255" min="0" step="1" class="b"><br>
+              </div>
+              <div class="color-value">
+                  <input type="text" class="rgb-val">
+              </div>
+                <p class="settings_buy" id="bought">Купить</p>
+
+      </div>
+      <div class="variants">
+        <div class="variant variant1"></div>
+        <div class="variant variant2"></div>
+        <div class="variant variant3"></div>
+        <div class="variant variant4"></div>
+      </div>
   </body>
 </html>

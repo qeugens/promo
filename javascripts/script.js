@@ -12,6 +12,7 @@ $(document).ready(function(){
   })
   document.getElementById('ready').onclick = function() {
   document.getElementById('ready').innerHTML = 'Готово';
+  $('input').val('');
   }
   const pickr = new Pickr({
       el: '.color-picker',

@@ -848,26 +848,121 @@ input[type="text"] {
 }
 
 /* КАСТОМИЗАЦИЯ */
-#red, #green, #blue {
-    float: left;
-    clear: left;
-    width: 300px;
-    margin: 15px;
-  }
-  #swatch {
-    width: 120px;
-    height: 100px;
-    margin-top: 18px;
-    margin-left: 350px;
-    background-image: none;
-  }
-  #red .ui-slider-range { background: #ef2929; }
-  #red .ui-slider-handle { border-color: #ef2929; }
-  #green .ui-slider-range { background: #8ae234; }
-  #green .ui-slider-handle { border-color: #8ae234; }
-  #blue .ui-slider-range { background: #729fcf; }
-  #blue .ui-slider-handle { border-color: #729fcf; }
-  
+.automat {
+  position: absolute;
+  width: 549px;
+  height: 600px;
+  background: #FF5C29;
+  border: 4px solid #FFE042;
+  top: 90px;
+  right: 150px;
+}
+.automatp {
+  font-family: main_b;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: #FFE143;
+  margin: 30px;
+}
+.rgb-slider {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+input[type="range"]{
+  -webkit-appearance: none;
+  width: 443px;
+  height: 38px;
+  border: 4px solid #FFE042;
+  border-radius: 34px;
+  margin: 10px auto;
+}
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 51px;
+  height: 51px;
+  border: 4px solid #FFE042;
+  border-radius: 50%;
+  cursor: pointer;
+  /* background: #FFE143; */
+}
+.r {
+  background: #EF2929;
+}
+.g {
+  background: #00DF16;
+}
+.b {
+  background: #75B8FF;
+}
+.r::-webkit-slider-thumb {
+  background: #EF2929;
+}
+.g::-webkit-slider-thumb {
+  background: #00DF16;
+}
+.b::-webkit-slider-thumb {
+  background: #75B8FF;
+}
+input.rgb-val {
+  border: 4px solid #FFE042;
+  width: 444px;
+  height: 56px;
+  margin-top: 100px;
+}
+.settings_buy {
+  font-family: main_b;
+  color: #FF5C29;
+  width: 443px;
+  height: 56px;
+  background: #FFE042;
+  border-radius: 34px;
+  text-align: center;
+  padding-top: 9px;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: .2s;
+}
+.settings_buy:hover {
+  background: #75B8FF;
+  transition: .2s;
+}
+.show-color {
+  position: absolute;
+  top: 90px;
+  left: 170px;
+  width: 420px;
+  height: 420px;
+  background: #FF5C29;
+  border: 4px solid #FFE042;
+  border-radius: 50%;
+}
+.variant {
+  width: 109px;
+  height: 109px;
+  border: 4px solid #FFE042;
+  border-radius: 50%;
+}
+.variants {
+  position: absolute;
+  bottom: 30px;
+  left: 110px;
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.variant2 {
+  background: #FF5C29;
+}
+.variant3 {
+  background: #CF69FF;
+}
+.variant4 {
+  background: #FFE042;
+  border: 4px solid #CF69FF;
+}
   /* ОЦЕНКА НАСТРОЕК */
 .marks_title {
   display: flex;
