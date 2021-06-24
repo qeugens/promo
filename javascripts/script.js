@@ -1,7 +1,11 @@
 $(document).ready(function(){
   $('.checkbox').click(function(){
-    $(this).toggleClass('active')
+    $(this).toggleClass('active1')
     $('.plan').toggleClass('inner')
+  })
+  $('.checkbox').click(function(){
+    $(this).toggleClass('active2')
+    $('.planl').toggleClass('innerl')
   })
   let zones;
   $('.zones').mouseover(function(){

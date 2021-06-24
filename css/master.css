@@ -117,6 +117,7 @@ input[type="text"] {
   color: white;
   cursor: pointer;
   margin: 8px;
+  z-index: 12;
 }
 .head_content {
   display: flex;
@@ -132,6 +133,7 @@ input[type="text"] {
   justify-content: space-between;
   width: 70%;
   padding-top: 9px;
+  transition: .2s ease;
 }
 .sections > a {
   text-decoration: none;
@@ -146,6 +148,55 @@ input[type="text"] {
 .sections > a:hover {
   color: #E0E0E0;
   transition: .2s;
+}
+.sections.active {
+  top: 0;
+  transition: .2s ease;
+}
+.burger {
+  display: none;
+  position: absolute;
+  width: 36px;
+  height: 20px;
+  z-index: 12;
+  right: 30px;
+  top: 20px;
+}
+.burger span {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  top: 8px;
+  transition: .2s ease;
+}
+.burger::before,
+.burger::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  transition: .2s ease;
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+.burger.active:before {
+  transform: rotate(45deg);
+  top: 8px;
+}
+.burger.active:after {
+  transform: rotate(-45deg);
+  bottom: 8px;
+}
+.burger.active span {
+  transform: scale(0);
 }
 .circle {
   position: relative;
@@ -185,10 +236,33 @@ input[type="text"] {
   justify-content: space-between;
   margin: 100px 0 0 0;
 }
+.little {
+  display: flex;
+  width: 43%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
+  opacity: 0;
+}
 .second_text {
   width: 100%;
   text-align: center;
-  margin: 100px 0 0 0;
+  margin: 60px 0 0 0;
+}
+.little_stars {
+  position: absolute;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  left: 9%;
+}
+.ones {
+  top: 200px;
+  opacity: 0;
+}
+.twos {
+  top: 1270px;
+  opacity: 0;
 }
 .flowers {
   position: absolute;
@@ -230,6 +304,16 @@ input[type="text"] {
 .inner {
   background: url(../images/inner.png);
 }
+.planl {
+  display: none;
+  margin: 50px 0 0 80px;
+  width: 300px;
+  height: 263px;
+  background: url(../images/outerl.png);
+}
+.innerl {
+  background: url(../images/innerl.png);
+}
 .switch {
   display: flex;
   flex-direction: column;
@@ -266,8 +350,11 @@ input[type="text"] {
   left: 4px;
   transition: all .3s ease 0s;
 }
-.checkbox.active::after {
+.checkbox.active1::after {
   left: 60px;
+}
+.checkbox.active2::after {
+  left: 60px
 }
 .tablo_content {
   position: absolute;
@@ -387,6 +474,45 @@ input[type="text"] {
   font-size: 24px;
   line-height: 29px;
 }
+.mapl {
+  display: none;
+  width: 100%;
+  height: 1500px;
+  background: #FF5C29;
+  margin-top: 40px;
+}
+.zonesl {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  align-items: center;
+}
+.zonesl p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18;
+  line-height: 24px;
+}
+.cabinetl {
+  margin: 90px auto;
+}
+.cabinetl img {
+  margin-top: 40px;
+}
+.lecturel img {
+  margin-top: 40px;
+}
+.restl img {
+  margin-top: 40px;
+}
+.raw1l {
+  display: flex;
+  width: 90%;
+  margin: 20px auto;
+}
+.raw1l h1 {
+  margin-top: 30px;
+}
 .fourth {
   position: relative;
   width: 100%;
@@ -419,7 +545,7 @@ input[type="text"] {
   display: none;
 }
 .pcr-app[data-theme=monolith] .pcr-selection .pcr-color-preview {
-  width: 358px;
+  width: 32%;
   height: 406px;
   margin-bottom: 0;
   border-radius: 0;
@@ -427,7 +553,7 @@ input[type="text"] {
   z-index: 5;
 }
 .pcr-app[data-theme=monolith] .pcr-selection .pcr-color-palette {
-  width: 943px;
+  width: 71.85%;
   height: 406px;
   margin: -406px 0 0 358px;
 }
@@ -437,7 +563,7 @@ input[type="text"] {
 .pcr-app[data-theme=monolith] .pcr-selection .pcr-color-chooser, .pcr-app[data-theme=monolith] .pcr-selection .pcr-color-opacity {
   margin-top: -13px;
   height: 29px;
-  width: 1301px;
+  width: 100%;
   z-index: 6;
   border-radius: 25px;
   border: 4px solid #FFE042;
@@ -642,13 +768,13 @@ input[type="text"] {
   margin: 82px;
 }
 .raw1 {
-  margin: 20px;
+  margin-top: 20px;
 }
 .raw2 {
-  margin: 100px;
+  margin-top: 100px;
 }
 .raw3 {
-  margin: -40px;
+  margin-top: -40px;
 }
 /* ОНЛАЙН-ЦЕНТР */
 .title_centre > h1 {

@@ -8,13 +8,20 @@
     <meta name="author" content="qeugens">
      <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Колорист</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css">/
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
     <script src="javascripts/script.js"></script>
   </head>
   <body>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('.burger').click(function(event){
+        $('.burger, .sections').toggleClass('active');
+      });
+    });
+    </script>
     <div class="header">
       <div class="head_content">
         <a href="index.html" class="logo">Колорист</a>
@@ -25,6 +32,9 @@
           <a href="project.html" target="_blank">Спецпроект</a>
           <a href="#registration">Регистрация</a>
         </div>
+      </div>
+      <div class="burger">
+        <span></span>
       </div>
     </div>
 
@@ -39,9 +49,18 @@
             <div class=""> <img src="images/star.svg" alt=""> </div>
             <div class=""> <img src="images/clover.svg" alt=""> </div>
           </div>
+          <div class="little">
+            <div class=""> <img src="images/rombl.svg" alt=""> </div>
+            <div class=""> <img src="images/starl.svg" alt=""> </div>
+            <div class=""> <img src="images/cloverl.svg" alt=""> </div>
+          </div>
           <p class="second_text">Центр цветовых настроек «Колорист» — место, где можно <br> изменить своё цветовое восприятие, добавить других <br> оттенков миру , залить его любимым цветом или <br> полностью поменять цветовой профиль. </p>
       </div>
       </div>
+    </div>
+    <div class="little_stars ones">
+      <img src="images/starl.svg" alt="">
+      <img src="images/starl.svg" alt="">
     </div>
 
     <div class="flowers">
@@ -51,6 +70,7 @@
 
     <div class="second">
       <div class="plan"></div>
+      <div class="planl"></div>
       <div class="switch">
         <h1>Здание <br> центра</h1>
         <form class="block-form" action="#" method="post">
@@ -66,6 +86,10 @@
         <img src="images/star.svg" alt="">
         <h1>Карта центра</h1>
         <img src="images/star.svg" alt="">
+      </div>
+      <div class="little_stars twos">
+        <img src="images/starl.svg" alt="">
+        <img src="images/starl.svg" alt="">
       </div>
         <div class="map">
           <div class="zones reseption" data-index="tc1"></div>
@@ -101,6 +125,37 @@
               </div>
             </div>
         </div>
+      </div>
+      <div class="mapl">
+        <div class="raw1l">
+          <div class="zonesl reseptionl">
+            <h1>Ресепшн</h1>
+            <p>На ресепшене можно оформить <br> терапию и получить свой цвет для <br> похода к специалисту</p>
+            <img src="images/reseptionl.png" alt="">
+          </div>
+          <div class="zonesl lecturel">
+            <h1>Лекторий</h1>
+            <p>В лектории можно послушать <br> лучших специалистов в сфере <br> цвета и больше узнать <br> о процедурах</p>
+            <img src="images/lecturel.png" alt="">
+          </div>
+        </div>
+          <div class="raw1l">
+            <div class="zonesl restl">
+              <h1>Отдых</h1>
+              <p>В центре есть две зоны отдыха <br> — для клиентов теплых или холодных <br> цветов, а также лаборатория</p>
+              <img src="images/restl.png" alt="">
+            </div>
+            <div class="zonesl canteenl">
+              <h1>Столовая</h1>
+              <p>В столовой все блюда разделены <br> на на 4 части для пациентов <br> разных групп</p>
+              <img src="images/canteenl.png" alt="">
+            </div>
+          </div>
+          <div class="zonesl cabinetl">
+            <h1>Кабинеты</h1>
+            <p>Кабинеты личной консультации <br> делятся строго по цветам. Здесь <br> специалисты проводят терапию</p>
+            <img src="images/cabinetl.png" alt="">
+          </div>
       </div>
       <div class="fourth">
           <h1 id="registration">Регистрация на терапию</h1>
