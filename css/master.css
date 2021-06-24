@@ -885,7 +885,6 @@ input[type="range"]::-webkit-slider-thumb{
   border: 4px solid #FFE042;
   border-radius: 50%;
   cursor: pointer;
-  /* background: #FFE143; */
 }
 .r {
   background: #EF2929;
@@ -946,7 +945,7 @@ input.rgb-val {
 }
 .variants {
   position: absolute;
-  bottom: 30px;
+  top: 580px;
   left: 110px;
   display: flex;
   width: 35%;
@@ -963,6 +962,7 @@ input.rgb-val {
   background: #FFE042;
   border: 4px solid #CF69FF;
 }
+
   /* ОЦЕНКА НАСТРОЕК */
 .marks_title {
   display: flex;

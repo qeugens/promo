@@ -1,0 +1,14 @@
+@media screen and (min-width:1650px){
+  .flowers { height: 1850px; }
+  h1 {font-size: 100px;
+      line-height: 90px;}
+  p {font-size: 32px}
+  .first_text, .first_container, .second_text {margin-top: 220px;}
+  .sections a {font-size: 24px;}
+  .logo {font-size: 35px;}
+  .book img {margin-left: 784px;}
+  .online_content {margin-top: 400px;}
+  .star_centre {margin-top: 250px}
+  .project_content {margin-top: -100px}
+  .colors_liked {margin-left: 1500px;}
+}
